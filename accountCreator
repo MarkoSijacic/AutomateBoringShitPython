@@ -1,6 +1,11 @@
+"""This is a program that allows the user to create an infinite number of password protected accounts
+   and then log in with either of those to list all the accounts registered during its run. 
+   It was envisioned to be an exercise in str or dict value manipulation while working with if-elif-else and while statements. """
+
 import sys, pprint
 
 # placeholder for a dictionary style list of accounts\passwords. 
+
 accounts = {}
 
 """ This menu pops up after user logs in. User can now see all accounts\passwords he has created, or exit the program. 
@@ -77,8 +82,7 @@ def login():
             print ('Please, type in a valid account name, only numbers and letters are allowed.')
             login()
         elif username == '<':
-            startscreen()
-        
+            startscreen()   
     if username.isalnum() == True:
         if username in list(accounts.keys()):
             print ('Ok, ', username, '. Now, tell us your password?' )
@@ -94,6 +98,7 @@ def login():
             login ()
 
 #Welcome screen, presents the user with following options: Register a new account, Log in with existing account, Quit the program.
+
 def startscreen(): 
     stAnswer = ('')
     while True:
@@ -112,4 +117,5 @@ def startscreen():
             print ('\nNot a valid answer. Please type "R", "L", or "Q".\n')
 
 #initializes the program
+
 startscreen()
