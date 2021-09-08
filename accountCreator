@@ -3,7 +3,8 @@ import sys, pprint
 # placeholder for a dictionary style list of accounts\passwords. 
 accounts = {}
 
-# This menu pops up after user logs in. User can now see all accounts\passwords he has created, or exit the program. The option to sign out is also scripted in, and it takes the user back to the welcome screen. 
+""" This menu pops up after user logs in. User can now see all accounts\passwords he has created, or exit the program. 
+The option to sign out is also scripted in, and it takes the user back to the welcome screen.""" 
 
 def afterlog():
     print ('You have succesfully logged in, what do you want to do?')
